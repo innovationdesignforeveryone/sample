@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/Gym.css">
+    <style>
+        /* CSS Reset*/
+        body {
+            font-family: cursive;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('gym.jpg');
+        }
+
+        .left {
+            position: absolute;
+            left: 60px;
+            top: 20px;
+            display: inline-block;
+           /*border: 2px solid red;*/
+        }
+
+        .left img {
+            width: 123px;
+            filter: invert(100%);
+            /* invert is a function of converting image into white */
+        }
+
+        .left div {
+            line-height: 19px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .mid {
+            display: block;
+            width: 45%;
+            margin: 20px auto;
+            /*border: 2px solid green;*/
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            display: inline-block;
+           /* border: 2px solid yellow;*/
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 28px;
+        }
+
+        .navbar li a {
+            position: sticky;
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: solid;
+            color: gray;
+        }
+
+        .btn {
+            font-family: cursive;
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 15px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(56, 55, 55);
+        }
+
+        .container {
+            /*border: 2px solid white;*/
+            margin: 140px 260px;
+            padding: 155px;
+            width: 33%;
+            border-radius: 10px;
+        }
+
+        h4 {
+            position: relative;
+            top: 0px;
+            margin: -83px -97px;
+            padding: 4px 10px;
+            font-size: 34px;
+        }
+
+        h1 {
+            font-family:sans-serif;
+            position: relative;
+            top: 0px;
+            margin: 17px -100px;
+            padding: 123px 20px;
+            font-size: 58px;
+        }
+
+        .primary {
+            display: block;
+            position: relative;
+            top: 0px;
+            font-size: 20px;
+            color: white;
+            background-color: purple;
+            border: 15px solid purple;
+            border-radius: 2px;
+            margin: 0px 0px;
+            padding: 10px 40px;
+            cursor: pointer;
+        }
+        .primary:hover{
+            background-color:purple;
+        
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!--left box for logo-->
+        <div class="left">
+            <img src="logo.png" alt="">
+            <div>Sahil Fitness</div>
+
+        </div>
+        <!--mid box for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fitness Calcuator</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Plans</a></li>
+
+            </ul>
+        </div>
+        <!--right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h4>Base Fit- Functional Fitness Studio</h4>
+        <h1>Where Fitness Becomes Your Lifestyle</h1>
+        <button class="primary">Book Now</button>
+    </div>
+
+</div>
+</body>
+
+</html>
